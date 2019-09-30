@@ -7,7 +7,6 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
 
   def navibar_test
     assert_select "a[href=?]", "/static_pages/home.html"
-    assert_select "a[href=?]", "/static_pages/home.html"
     assert_select "a[href=?]", "/static_pages/about.html"
     assert_select "a[href=?]", "/static_pages/help.html"
   end
