@@ -18,21 +18,21 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get home" do
-    get static_pages_home_url
+    get home_path 
     assert_response :success
     assert_select "title", "Home | #{@base_title}"
     navibar_test
   end
 
   test "should get help" do
-    get static_pages_help_url
+    get help_path 
     assert_response :success
     assert_select "title", "Help | #{@base_title}"
     navibar_test
   end
 
   test "should get about" do
-    get static_pages_about_url
+    get about_path 
     assert_response :success
     assert_select "title", "About | #{@base_title}"
     navibar_test
