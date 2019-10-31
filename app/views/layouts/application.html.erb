@@ -23,6 +23,9 @@
         <li id="myButton"><a href="/help.html">Help</a></li>
       </ul>
     </div>
+    <% flash.each do |message_type, message| %>
+      <div class="alert alert-<%= message_type %>"><%= message %></div>
+    <% end %>
     <%= yield %>
     <%= debug(params) if Rails.env.development? %> 
   </body>
