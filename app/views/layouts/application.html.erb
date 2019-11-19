@@ -15,16 +15,7 @@
   </head>
 
   <body>
-    <div class="navigation">
-      <nav>
-      <ul>
-        <li id="logo"></li>
-        <li id="myButton"><a href="/home.html">Home</a></li>
-        <li id="myButton"><a href="/about.html">About</a></li>
-        <li id="myButton"><a href="/help.html">Help</a></li>
-      </ul>
-      </nav>
-    </div>
+    <%= render 'layouts/header' %>
     <% flash.each do |message_type, message| %>
       <div class="alert alert-<%= message_type %>"><%= message %></div>
     <% end %>
