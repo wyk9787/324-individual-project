@@ -115,11 +115,13 @@ li {
 
 #myButton:hover {
   background-color: #fcda69;
+  text-decoration: none;
 }
 
 #myButton:active {
   position: relative;
   top: 1px;
+  text-decoration: none;
 }
 
 #logo {
